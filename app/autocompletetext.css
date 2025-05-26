@@ -1,0 +1,104 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.AutoCompleteText{
+    width: 100%;
+    border: 1px solid grey;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+    font-family: Inter;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.73)
+}
+
+.AutoCompleteText input {
+    width: 100%;
+    border: none;
+    font-family: Inter;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.73);
+    padding: 10px 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.AutoCompleteText ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid grey;
+    background-color: rgba(255, 255, 255, 1.00);
+}
+
+.AutoCompleteText ul::before {
+    content: "";
+}
+
+.AutoCompleteText li {
+    padding: 10px 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.AutoCompleteText li.active {
+    text-decoration: underline;
+    background-color: rgba(128, 128, 128, 0.20);
+}
+
+
+.li-item {
+    display: table-row;
+    width: 100%;
+    overflow: hidden;
+}
+
+.li-tag {
+    display: table-cell;
+    padding-right: 10px;
+    vertical-align: bottom;
+    text-wrap: nowrap;
+}
+
+.li-extras{
+    display: table-cell;
+    overflow: hidden;
+}
+
+.li-all-tags{
+    display: flex;
+    overflow:hidden;
+    width: 200%;
+    font-size: 16px;
+    vertical-align: top;
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 10px;
+}
+
+.li-extras-rest{
+    display: table-row;
+    overflow: hidden;
+    
+}
+
+.li-country {
+    display: table-cell;
+    font-size: 16px;
+    vertical-align: bottom;
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 10px;
+}
+
+.li-region {
+    display: table-cell;
+    font-size: 16px;
+    vertical-align: bottom;
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 10px;
+}
+
+.li-character {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-right: 10px;
+}
